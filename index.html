@@ -5,48 +5,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aiqu Travel</title>
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600;1,700&display=swap"
         rel="stylesheet">
+        <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="styles.css">
+    
 
 </head>
 
 <body>
 
-    <main>
+    <main class="sm:mx:0">
         <nav class="navbar">
             <div class="right">
                 <img class="aroplane" src="Images/Group 40071 (2).png" alt="">
-                <h2>Zma <span class="caption">Travel</span></h2>
+                <h2 class="text-2xl font-bold">Zma <span class="caption">Travel</span></h2>
             </div>
-            <div class="left">
-                <p class="caption">Home</p>
-                <p>Packages</p>
-                <p>Testimonial</p>
-                <p>Blog</p>
-                <p>Contact</p>
+            <div>
+                <div class=" hidden lg:block">
+                    <div class="flex gap-10">
+                        <p class="caption">Home</p>
+                    <p>Packages</p>
+                    <p>Testimonial</p>
+                    <p>Blog</p>
+                    <p>Contact</p>
+                    </div>
+                    
+                </div>
                 
+                <div class="lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12" viewBox="0 0 18 12" fill="none">
+                        <path d="M0.75 0.75H17.25M0.75 6H17.25M0.75 11.25H17.25" stroke="#131318" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                </div>
             </div>
-            <div class="threedot">
-                <svg  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                    <path d="M3.75 6.75H20.25M3.75 12H20.25M3.75 17.25H20.25" stroke="#131318" stroke-width="1.5"
-                        stroke-linecap="round" stroke-linejoin="round" />
-                </svg>
-            </div>
-
 
         </nav>
 
         <section class="miyavhai">
-            <h1>Explore Your Travel</h1>
+            <h1 class="text-3xl font-bold">Explore Your Travel</h1>
             <p>personalized adventures, where curated experiences meet your wanderlust,</p>
             <p>creating unforgettable journeys
                 just for you.</p>
-            <div class="tiyavhai">
+            <div class="tiyavhai lg:flex-row">
                 <div class="as">
+                   
                     <p>Where go</p>
                 </div>
                 <div class="as">
@@ -73,9 +80,9 @@
                 </div>
             </div>
         </section>
-        <section class="ss">
-            <div>
-                <h1>Our Popular Tours</h1>
+        <section class="grid grid-cols-1 sm:grid-cols-2 justify-between gap-20">
+            <div class="  my-auto">
+                <h1 class="text-4xl font-bold">Our Popular Tours</h1>
                 <p class="dd">
                     Highlight a variety of destinations to cater to different interests and preferences.
                     Offer tours to popular and unique locations to attract a broad audience.Join me as we navigate the
@@ -95,43 +102,43 @@
                     spirit of travel. </p>
                 <button class="op">read more</button>
             </div>
-            <div class="borof">
-                <img src="Images/Rectangle 4.png" alt="">
+            <div class="borof my-20 ">
+                <img class="w-full" src="Images/Rectangle 4.png" alt="">
             </div>
         </section>
         <section>
             <div class="choose">
-                <h2>Choose Your Destination</h2>
+                <h2 class="text-4xl font-bold">Choose Your Destination</h2>
                 <p class="cho">"Embark on a journey of self-discovery as you choose your destination</p>
                 <p class="cho">where each path holds the promise of adventure and growth."
                 </p>
             </div>
             <div class="gallery">
-                <div class="item item-1">
+                <div class="item item-1 sm:col-span-6">
                     <img src="Images/Rectangle1.png" alt="">
                     <p class="text-above">Maldives</p>
                 </div>
-                <div class="item item-2">
+                <div class="item item-2 sm:col-span-6">
                     <img src="Images/Rectangle2.png" alt="">
                     <p class="text-above">Indonesia</p>
                 </div>
-                <div class="item item-3">
+                <div class="item item-3 sm:col-span-4">
                     <img src="Images/Rectangle3.png" alt="">
                     <p class="text-above">Srilanka</p>
                 </div>
-                <div class="item item-4">
+                <div class="item item-4 sm:col-span-5">
                     <img src="Images/Rectangle4.png" alt="">
                     <p class="text-above">North America</p>
                 </div>
-                <div class="item item-5">
+                <div class="item item-5 sm:col-span-3">
                     <img src="Images/Rectangle5.png" alt="">
                     <p class="text-above">Kashmir</p>
                 </div>
-                <div class="item item-6">
+                <div class="item item-6 sm:col-span-5">
                     <img src="Images/Rectangle6.png" alt="">
                     <p class="text-above">Bangladesh</p>
                 </div>
-                <div class="item item-7">
+                <div class="item item-7 sm:col-span-7">
                     <img src="Images/Rectangle7.png" alt="">
                     <p class="text-above">Bandarban</p>
                 </div>
@@ -139,13 +146,13 @@
         </section>
         <section>
             <div class="choose">
-                <h2>Choose Your Destination</h2>
+                <h2 class="text-4xl font-bold">Why Choose Us</h2>
                 <p class="cho">"Embark on a journey of self-discovery as you choose your destination</p>
                 <p class="cho">where each path holds the promise of adventure and growth."
                 </p>
             </div>
             <div class="cards">
-                <div class="twocards">
+                <div class="twocards sm:flex-row">
                     <div class="card1">
                         <img class="cardimg" src="Images/hotel 1.png" alt="" srcset="">
                         <h2 class="cardimg">Handpicked Hotels</h2>
@@ -165,8 +172,8 @@
                 </div>
             </div>
         </section>
-        <section class="ss">
-            <div>
+        <section class="grid grid-cols-1 sm:grid-cols-2 gap-20">
+            <div class="my-auto">
                 <h1 style="font-size:xx-large;">A Simple Perfect Place To Get Lost</h1>
                 <p class="dd">
                     Our commitment to offering the Best Price Guarantee ensures that you not only enjoy top-notch accommodations but also the assurance that you won't find a better deal elsewhere.
@@ -185,8 +192,8 @@
                 <img src="Images/Group 40089.png" alt="">
             </div>
         </section>
-        <section class="ss" style="justify-content: center;">
-            <div style="border: 3px solid #FF5400; padding: 55px; border-radius: 15px">
+        <section class="grid grid-cols-1 sm:grid-cols-2 gap-20" style="justify-content: center;">
+            <div class="my-auto " style="border: 3px solid #FF5400; height: 450px; padding: 30px; border-radius: 15px">
                 <h1 style="font-size:xx-large;">Newsletter</h1>
                 <p class="dd">
                     Get your daily dose of travel news & tips. Sign<br> up today!
@@ -195,13 +202,13 @@
                 <hr style="margin: 20px 0;">
 
                 <input type="text"
-                    style="width: 97%; background-color: #1313180D; padding: 8px 5px; border-radius: 5px; border-color: #1313180D;"
+                    style="width: 100%; background-color: #1313180D; padding: 8px 5px; border-radius: 5px; border-color: #1313180D;"
                     placeholder="Enter your Name">
 
                 <br>
 
                 <input type="email"
-                    style="margin-top: 5px; background-color: #1313180D; width: 97%; padding: 8px 5px; border-radius: 5px; border-color: #1313180D;"
+                    style="margin-top: 5px; background-color: #1313180D; width: 100%; padding: 8px 5px; border-radius: 5px; border-color: #1313180D;"
                     name="" id="" placeholder="Enter Your Email">
 
 
@@ -209,7 +216,7 @@
             </div>
             <div class="borof">
                 <img src="Images/Rectangle 8 (1).png" alt="">
-                <div class="text-corner" style="border: 2px solid o#FF5400; background-color: #FF5400; width: 180px;border-radius:10px; padding: 10px 0; text-align: center; color: white;">
+                <div class="text-corner  sm:top-[72%] sm:left-[73%]" style="border: 2px solid o#FF5400; background-color: #FF5400; width: 180px; border-radius:10px; padding: 10px 0; text-align: center; color: white;">
                     <p>Travel.com</p>
                     <h3>Save up to 70%</h3>
                 </div>
@@ -225,12 +232,12 @@
     ">
         <div class="right" style="justify-content: center; margin-bottom: 20px;">
             <img class="aroplane" src="Images/Group 40071 (2).png" alt="">
-            <h2>Zma <span class="caption">Travel</span></h2>
+            <h2 class="text-2xl font-bold">Zma <span class="caption">Travel</span></h2>
         </div>
         <p style="margin: 30px; color: #5A5A5D;">
-            Book with confidence, as our Best Price Guarantee guarantees that you'll receive the best possible rates, affirming our dedication to providing value for your travel .
+            Book with confidence, as our Best Price Guarantee guarantees that you'll receive the best possible rates,<br> affirming our dedication to providing value for your travel .
         </p>
-        <svg xmlns="http://www.w3.org/2000/svg" width="175" height="24" viewBox="0 0 175 24" fill="none">
+        <svg class="mx-auto" xmlns="http://www.w3.org/2000/svg" width="175" height="24" viewBox="0 0 175 24" fill="none">
             <path
                 d="M19.8879 6.65563C19.1421 6.98551 18.3548 7.19169 17.5262 7.31539C18.3548 6.82057 19.0178 6.0371 19.3078 5.0887C18.5206 5.54228 17.6505 5.87216 16.6975 6.07834C15.9517 5.29487 14.8745 4.80005 13.7143 4.80005C11.4769 4.80005 9.6539 6.6144 9.6539 8.84109C9.6539 9.17097 9.69533 9.45962 9.7782 9.74827C6.42212 9.58333 3.39751 7.97516 1.36729 5.50105C1.03583 6.11957 0.828661 6.77934 0.828661 7.52157C0.828661 8.92356 1.53302 10.1606 2.65171 10.9029C1.98879 10.8616 1.36729 10.6967 0.787228 10.408V10.4493C0.787228 12.4286 2.19595 14.078 4.06044 14.4491C3.72897 14.5315 3.35608 14.5728 2.98318 14.5728C2.73458 14.5728 2.44455 14.5315 2.19595 14.4903C2.73458 16.0985 4.22617 17.2943 6.00779 17.2943C4.59907 18.3664 2.85888 19.0262 0.95296 19.0262C0.621495 19.0262 0.290031 19.0262 0 18.9849C1.82305 20.1395 3.93614 20.7993 6.25639 20.7993C13.7558 20.7993 17.8576 14.614 17.8576 9.25345C17.8576 9.0885 17.8576 8.88233 17.8576 8.71739C18.6449 8.18133 19.3492 7.48033 19.8879 6.65563Z"
                 fill="#131318" />

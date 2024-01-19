@@ -14,13 +14,9 @@ body {
       margin: 30px 0;
     }
 
-.left{
-        display: none;
-    }
 
-.threedot{
-    visibility: visible;
-    }
+
+
   
 }
 
@@ -51,15 +47,6 @@ main{
 
 }
 
-.left {
-    display: flex;
-    gap: 20px;
-}
-
-.threedot{
-    visibility: hidden;
-    
-}
 
 .miyavhai {
     background-image: url("Images/Group\ 13\ \(1\)\ \(1\).png");
@@ -84,6 +71,7 @@ main{
 
 .tiyavhai {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     gap: 30px;
     background-color: rgba(255, 255, 255, 0.30);
@@ -95,14 +83,15 @@ main{
     background-color: white;
     color: rgba(19, 19, 24, 0.50);
     font-size: small;
-    height: 30px;
-    width: 120px;
+    height: 40px;
+    width: 150px;
     border-radius: 5px;
     padding-top: 10px;
     padding-left: 5px;
     padding-right: 5px;
     display: flex;
     justify-content: space-between;
+
 }
 
 .ds {
@@ -110,7 +99,7 @@ main{
     background: #FF5400;
     font-size: small;
     width: 120px;
-    height: 30px;
+    height: 40px;
     border-radius: 5px;
     padding-top: 10px;
     padding-left: 5px;
@@ -118,12 +107,7 @@ main{
     gap: 3px;
 }
 
-.ss {
-    display: flex;
-    align-items: center;
-    gap: 100px;
 
-}
 
 .dd {
     padding-top: 30px;
@@ -154,8 +138,8 @@ main{
 }
 .text-corner{
     position: absolute;
-    top: 72%;
-    left: 73%;
+    top: 60%;
+    left: 61%;
     /* transform: translate(-50%, -50%); */
     transform: rotate(-40deg)
     
@@ -215,31 +199,31 @@ main{
 }
 
 .item-1{
-    grid-column: auto/span 6;
+    grid-column: auto/span 12;
 }
 
 .item-2{
-    grid-column: auto/span 6;
+    grid-column: auto/span 12;
 }
 
 .item-3{
-    grid-column: auto/span 4;
+    grid-column: auto/span 12;
 }
 
 .item-4{
-    grid-column: auto/span 5;
+    grid-column: auto/span 12;
 }
 
 .item-5{
-    grid-column: auto/span 3;
+    grid-column: auto/span 12;
 }
 
 .item-6{
-    grid-column: auto/span 5;
+    grid-column: auto/span 12;
 }
 
 .item-7{
-    grid-column: auto/span 7;
+    grid-column: auto/span 12;
 }
 
 .cards {
@@ -252,6 +236,7 @@ main{
 
 .twocards {
     display: flex;
+    flex-direction: column;
     gap: 20px;
 }
 
@@ -261,7 +246,7 @@ main{
     flex-shrink: 0;
     background-color: #FBB56333;
     border-radius: 15px;
-    padding: 70px 0px 0px 20px;
+    padding: 50px 20px 20px 20px;
     
 }
 
@@ -271,7 +256,7 @@ main{
     flex-shrink: 0;
     background-color: #29CEF633;
     border-radius: 15px;
-    padding: 70px 0px 0px 20px;
+    padding: 50px 20px 20px 20px;
 }
 
 .card3 {
@@ -280,7 +265,7 @@ main{
     flex-shrink: 0;
     background-color: #E9444433;
     border-radius: 15px;
-    padding: 70px 0px 0px 20px;
+    padding: 50px 20px 20px 20px;
 
 }
 
